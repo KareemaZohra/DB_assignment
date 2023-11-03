@@ -21,4 +21,4 @@ select C.name, sum(O.totalAmount) as totalPurchaseAmount from Orders O
 left join Customers C on O.customer_id = C.id
 group by O.customer_id
 order by totalPurchaseAmount desc
-    limit 5;
+limit 5;
